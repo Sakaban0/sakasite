@@ -1,41 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-<meta charset="utf-8">
-<title>あなたのＨＰタイトル</title>
-<meta name="keywords" content="ページのキーワードA,B,C">
-<meta name="description" content="ページの説明">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="index.css">
-</head>
-<body>
-<div id="outer">
-<header>
-<div class="header-inner">
-<h1>あなたのＨＰタイトル</h1>
-<p>あなたのＨＰの説明文</p>
-</div>
-</header>
-<div id="content">
-<div class="inner">
-<h2>記事ページ見出し・大</h2>
-<p>文章あれこれ</p>
-<h3>記事ページ見出し・中</h3>
-<p>文章あれこれ</p>
-<h4>記事ページ見出し・小</h4>
-<p>文章あれこれ</p>
-</div>
-<aside>
-<div class="left-title">サイドバータイトル</div>
-<div class="link">
-<ul>
-<li>記事ページへのリンク</li>
-<li>記事ページへのリンク</li>
-</ul>
-</div>
-</aside>
-</div>
-<footer>© 2010 あなたのホームページ</footer>
-</div>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TsunaguChat</title>
+    <meta name="description" content="TsunaguChatのインストールページへ。">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f8faf9;
+        color: #193d35;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      main {
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px;
+        gap: 34px;
+      }
+
+      h1 {
+        font-size: clamp(38px, 8vw, 68px);
+        letter-spacing: -.045em;
+        font-weight: 650;
+        margin: 0;
+      }
+
+      .install-link {
+        border: 0;
+        border-radius: 100px;
+        background: #22634f;
+        color: white;
+        padding: 17px 38px;
+        font: 600 16px system-ui;
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        transition: background .2s, transform .2s;
+      }
+
+      .install-link:hover {
+        background: #164936;
+        transform: translateY(-2px);
+      }
+
+      .install-link:focus-visible {
+        outline: 3px solid #81b7a3;
+        outline-offset: 5px;
+      }
+
+      svg {
+        width: 19px;
+        height: 19px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>TsunaguChat</h1>
+
+      <a class="install-link" href="https://github.com/Sakaban0/Tsunagu/releases/download/v1.6.0/TsunaguChat-1.6.0-Setup.exe">
+        <span>アプリをインストール</span>
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          aria-hidden="true"
+        >
+          <path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5" />
+        </svg>
+      </a>
+    </main>
+
+  </body>
 </html>
+
